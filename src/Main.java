@@ -57,7 +57,7 @@ public class Main extends Application {
 
         primaryStage.show(); //Display app.
 
-        system_message("Welcome to ChessDB-Remastered!", 2000);
+        welcomeMsg("Welcome to ChessDB-Remastered!", 2000);
         System.out.println("ChessDB-Remastered Start");
     }
 
@@ -71,7 +71,7 @@ public class Main extends Application {
      * @param msg Welcome message to display
      * @param time time to display message (ms)
      */
-    private void system_message(String msg, int time) {
+    private void welcomeMsg(String msg, int time) {
         welcomeMsgTime = time;
         message_text.setText(msg);
         message_text.setStyle("-fx-opacity: 1;" + "-fx-border-width: 10px;" + "-fx-border-radius: 10px;"
@@ -80,6 +80,7 @@ public class Main extends Application {
                                                 + "-fx-border-color: #afafff;");
         message_text.setMinHeight(350);
         message_text.toFront();
+        //Create thread to display welcome message for set time.
         Thread welcome_msg_thread=new Thread(
                 new Runnable() {
                     public void run() {
@@ -107,8 +108,8 @@ public class Main extends Application {
 
     /** Initialize ChessDB app **/
     private void init_app() {
-        Board.init_class();
         System.out.println("ChessDB-Remastered Init");
+//        Board.init_class();
     }
 
 }
