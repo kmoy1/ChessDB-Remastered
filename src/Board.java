@@ -1,7 +1,5 @@
-
-public class Board {
+public class Board{
 
     public static void init_class() {
-
     }
 }
