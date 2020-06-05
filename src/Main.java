@@ -1,11 +1,9 @@
 import javafx.application.Application;
 import javafx.scene.*;
 import javafx.stage.*;
-import javafx.scene.shape.Circle;
 
 
 import java.io.*;
-import javafx.application.Platform;
 
 import javafx.scene.control.TextArea;
 
@@ -15,6 +13,7 @@ public class Main extends Application {
     /*------------Attributes-------------- */
     public GUI gui;
     public static TextArea message_text = new TextArea(); //For overlaying on-screen messages.
+    public static int welcomeMsgTime; //Number of seconds to display welcome message.
     /*------------End Attributes-------------- */
     public static void main(String[] args) {
         Application.launch(args); //Launch JavaFX application.
@@ -59,16 +58,35 @@ public class Main extends Application {
 
         primaryStage.show(); //Display app.
 
-        system_message("Welcome to ChessDB-Remastered!", 2000);
+        system_message("Welcome to ChessDB-Remastered!", 3000);
         System.out.println("ChessDB-Remastered Start");
     }
 
-    private void system_message(String s, int i) {
+    @Override
+    public void stop() {
+        gui.shutdown();
+        System.out.println("ChessDB-Remastered Finished");
+    }
+
+    /** Display MSG as a TextArea component for TIME milliseconds.
+     * @param msg Welcome message to display
+     * @param time time to display message (ms)
+     */
+    private void system_message(String msg, int time) {
+        welcomeMsgTime = time;
+        message_text.setText(msg);
+        message_text.setStyle("-fx-opacity: 1;" + "-fx-border-width: 10px;" + "-fx-border-radius: 10px;"
+                                                + "-fx-border-style: solid;"
+                                                + "-fx-control-inner-background: #efefff;"
+                                                + "-fx-border-color: #afafff;");
+        message_text.setMinHeight(350);
+        message_text.toFront();
     }
 
     /** Initialize ChessDB app **/
     private void init_app() {
-
+        Board.init_class();
+        System.out.println("ChessDB-Remastered Init");
     }
 
 }

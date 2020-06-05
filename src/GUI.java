@@ -7,4 +7,8 @@ public class GUI {
     public GUI(Stage s) {
 
     }
+
+    /** Shut down GUI, used when closing app.**/
+    public void shutdown() {
+    }
 }
