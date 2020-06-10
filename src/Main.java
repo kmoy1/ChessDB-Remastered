@@ -32,16 +32,23 @@ public class Main extends Application {
         catch(Exception e) {}
         init_app(); //Initialize application.
         primaryStage.setTitle("ChessDB-Remastered");
-        //Set (x,y) position of stage to (0,0): take up entirety of (left corner) of window.
+        //Stage position is central by default.
         //TODO: Set width, height of primaryStage (?)
 //        primaryStage.setX(0);
 //        primaryStage.setY(0);
+        primaryStage.setHeight(700);
+        primaryStage.setWidth(500);
+
 
         Group root = new Group(); //COMPONENT with no layout. All nodes at (0,0).
 
-        gui = new GUI(primaryStage);
+        try {
+            gui = new GUI(primaryStage);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         //Add HBox as node
-        root.getChildren().add(gui.horizontal_box);
+        root.getChildren().add(gui.horizontal_box); //Add HBox for GUI.
         message_text.setWrapText(true);
         message_text.setTranslateX(10);
         message_text.setTranslateY(10);
@@ -57,7 +64,6 @@ public class Main extends Application {
 
         primaryStage.show(); //Display app.
 
-        welcomeMsg("Welcome to ChessDB-Remastered!", 2000);
         System.out.println("ChessDB-Remastered Start");
     }
 
@@ -71,7 +77,7 @@ public class Main extends Application {
      * @param msg Welcome message to display
      * @param time time to display message (ms)
      */
-    private void welcomeMsg(String msg, int time) {
+    private void displayWelcomeMsg(String msg, int time) {
         welcomeMsgTime = time;
         message_text.setText(msg);
         message_text.setStyle("-fx-opacity: 1;" + "-fx-border-width: 10px;" + "-fx-border-radius: 10px;"
@@ -108,8 +114,8 @@ public class Main extends Application {
 
     /** Initialize ChessDB app **/
     private void init_app() {
+        Board.init_class();
         System.out.println("ChessDB-Remastered Init");
-//        Board.init_class();
     }
 
 }

@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b65dc7a-a2b2-4920-8688-d4519df1d4a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MoveDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestChessDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Alpha.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/MERIFONTNEW.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/leftarrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/rightarrow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDB-Remastered/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDB-Remastered/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDB-Remastered/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDB-Remastered/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDB-Remastered/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDB-Remastered/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFile.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +37,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cuzISyrmPfZN2CBpSkTymsxI35" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documents/ChessDB-Remastered" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,10 +99,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
